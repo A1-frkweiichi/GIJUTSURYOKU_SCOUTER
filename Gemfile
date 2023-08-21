@@ -81,3 +81,9 @@ group :test do
 end
 
 gem 'meta-tags'
+
+gem 'dotenv-rails'
+gem 'octokit'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
