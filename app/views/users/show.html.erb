@@ -1,3 +1,8 @@
+<h1>コントリビューション数</h1>
+<p>全て: <%= @total_contributions %></p>
+<p>今月分: <%= @contributions_this_month %></p>
+<p>今週分: <%= @contributions_this_week %></p>
+
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { "turbo-method": :delete } %>
 
 <%= link_to "アカウント削除", user_registration_path, data: { "turbo-method": :delete, turbo_confirm: "You sure?" } %>

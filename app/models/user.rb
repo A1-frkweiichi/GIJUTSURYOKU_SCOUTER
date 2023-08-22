@@ -28,4 +28,11 @@ class User < ApplicationRecord
   def self.dummy_email(auth)
     "#{auth.uid}-#{auth.provider}@example.com"
   end
+
+  def update_contributions
+    client = Octokit::Client.new(access_token: self.github_token) # 保存しているGitHubのトークン
+    user_info = client.user(self.github_nickname) # 保存しているGitHubのニックネーム
+    contributions = user_info.public_repos
+    self.update(contributions: contributions)
+  end
 end

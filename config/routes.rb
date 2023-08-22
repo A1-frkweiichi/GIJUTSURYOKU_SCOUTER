@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     root to: "devise/sessions#new"
   end
 
-  get "home/top", to: "home#top", as: "home_top"
+  get "users/show", to: "users#show", as: "users_show"
 end

@@ -84,6 +84,7 @@ gem 'meta-tags'
 
 gem 'devise'
 gem 'dotenv-rails'
+gem "octokit", "~> 5.0"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
