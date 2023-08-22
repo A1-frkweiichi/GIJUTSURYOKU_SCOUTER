@@ -2,5 +2,5 @@
 <%# if user_signed_in? %>
   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 <%# else %>
-  <%= link_to 'githubでサインアップしてね', user_github_omniauth_authorize_path %>
+  <%= link_to 'githubでサインアップしてね', user_github_omniauth_authorize_path, data: {turbo: false} %>
 <%# end %>
