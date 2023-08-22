@@ -1,8 +1,6 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
-
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-  Button
-</button>
+<p><%= notice %><%= alert %></p>
+<%# if user_signed_in? %>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<%# else %>
+  <%= link_to 'githubでサインアップしてね', user_github_omniauth_authorize_path %>
+<%# end %>
