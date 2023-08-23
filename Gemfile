@@ -84,6 +84,7 @@ gem 'meta-tags'
 
 gem 'devise'
 gem 'dotenv-rails'
+gem 'graphql-client'
 gem "octokit", "~> 5.0"
 gem 'omniauth'
 gem 'omniauth-github'

@@ -6,6 +6,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def destroy
     resource.destroy
+    sign_out(resource)
     set_flash_message! :notice, :destroyed
     yield resource if block_given?
     respond_with_navigational(resource){ redirect_to root_path, status: :see_other }
